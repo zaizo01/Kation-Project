@@ -22,11 +22,7 @@
         </div>
 
         <div>
-            <vue-good-table 
-            :columns="columns" 
-            :rows="rows" 
-            styleClass="vgt-table condensed w-full"
-            :search-options="{
+            <vue-good-table :columns="columns" :rows="rows" styleClass="vgt-table condensed w-full" :search-options="{
             enabled: true,
             externalQuery: searchTerm
         }">
@@ -38,6 +34,9 @@
 </template>
 
 <script>
+    const baseUrl = 'http://localhost:3000/info';
+    import axios from 'axios';
+
     export default {
         name: 'my-component',
         data() {
@@ -80,60 +79,34 @@
                         field: 'estado',
                     },
                 ],
-                rows: [{
-                        suspensivos: '...',
-                        personaNo: '1',
-                        tipoDomicilio: 'Sucursal',
-                        calle: 'Ave. Winton Churchil',
-                        numero: 1020,
-                        sector: 'Naco',
-                        provincia: 'Distrito Nacional',
-                        estado: 'Activo'
-
-                    },
-
-                    {
-                        suspensivos: '...',
-                        personaNo: '2',
-                        tipoDomicilio: 'Trabajo',
-                        calle: 'Manuel de Jesus Troncoso',
-                        numero: 4,
-                        sector: 'Evaristo Morales',
-                        provincia: 'Santiago',
-                        estado: 'Activo'
-
-                    },
-
-                    {
-                        suspensivos: '...',
-                        personaNo: '3',
-                        tipoDomicilio: 'Verano',
-                        calle: 'Paseo Oeste',
-                        numero: 'S/N',
-                        sector: 'Centro de la Ciudad',
-                        provincia: 'La Romana',
-                        estado: 'Activo'
-
-                    },
-
-                    {
-                        suspensivos: '...',
-                        personaNo: '4',
-                        tipoDomicilio: 'Residencia',
-                        calle: 'Calle Luis Alberty',
-                        numero: 156,
-                        sector: 'La Romana',
-                        provincia: 'Distrito Nacional',
-                        estado: 'Activo'
-
-                    }
-                ],
+                rows: [],
             };
+        },
+        methods: {
+            getData() {
+                axios.get(baseUrl).then(resp => {
+                    for (let i = 0; i < resp.data.length; i++) {
+                        this.rows.push({
+                            suspensivos: resp.data[i].suspensivos,
+                            personaNo: resp.data[i].personaNo,
+                            tipoDomicilio: resp.data[i].tipoDomicilio,
+                            calle: resp.data[i].calle,
+                            numero: resp.data[i].numero,
+                            sector: resp.data[i].sector,
+                            provincia: resp.data[i].provincia,
+                            estado: resp.data[i].estado,
+                        })
+                    }
+
+                })
+            },
+        },
+        created() {
+            this.getData();
         },
     };
 </script>
 
-
 <style>
- 
+
 </style>>
