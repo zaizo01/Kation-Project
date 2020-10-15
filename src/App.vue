@@ -19,6 +19,9 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+  $thead-bg-color-1: #273f70;
+  $thead-bg-color-2: #273f70;
 
-</style>
+  @import '../node_modules/vue-good-table/src/styles/style.scss';
+</style>>
