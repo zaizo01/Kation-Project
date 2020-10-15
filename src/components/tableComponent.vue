@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="sm:w-1/2 sm:px-3 sm:my-3">
+            <div>
                 <button class="px-4 py-2 font-semibold text-white rounded-lg md:text-xl bg-default sm:text-sm">+ Nuevo
                     Domicilio</button>
             </div>
@@ -108,5 +108,5 @@
 </script>
 
 <style>
-  
+
 </style>>

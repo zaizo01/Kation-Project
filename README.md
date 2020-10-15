@@ -17,7 +17,7 @@ Completado
 
 ## Imagen del proyecto
 
-![alt text](https://res.cloudinary.com/dzrokq2oe/image/upload/v1602796643/Capture_project_xlshqm.png)
+![alt text](https://res.cloudinary.com/dzrokq2oe/image/upload/v1602800027/Capture_dtijb7.png)
 
 
 ## Instrucciones de instalacion y configuracion
