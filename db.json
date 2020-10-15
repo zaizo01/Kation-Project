@@ -1,0 +1,71 @@
+{
+    "info": [
+      {
+        
+        "suspensivos": "...",
+        "personaNo": "1",
+        "tipoDomicilio": "Sucursal",
+        "calle": "Ave. Winton Churchil",
+        "numero": "20",
+        "sector": "Naco",
+        "provincia": "Distrito Nacional",
+        "estado": "Activo",
+        "id": 1
+      },
+      {
+        "suspensivos": "...",
+        "personaNo": "2",
+        "tipoDomicilio": "Trabajo",
+        "calle": "Manuel de Jesus Troncoso",
+        "numero": "100",
+        "sector": "Evaristo Morales",
+        "provincia": "Santiago",
+        "estado": "Activo",
+        "id": 2
+      },
+      {
+        "suspensivos": "...",
+        "personaNo": "3",
+        "tipoDomicilio": "Verano",
+        "calle": "Paseo Oeste",
+        "numero": "S/N",
+        "sector": "Centro de la Ciudad",
+        "provincia": "La Romana",
+        "estado": "Activo",
+        "id": 3
+      },
+      {
+        "suspensivos": "...",
+        "personaNo": "4",
+        "tipoDomicilio": "Residencia",
+        "calle": "Calle Luis Alberty",
+        "numero": "156",
+        "sector": "La Romana",
+        "provincia": "Distrito Nacional",
+        "estado": "Activo",
+        "id": 4
+      },
+      {
+        "suspensivos": "...",
+        "personaNo": "5",
+        "tipoDomicilio": "Otro",
+        "calle": "Calle Rafael Augusto Sanchez",
+        "numero": "256",
+        "sector": "Piantini",
+        "provincia": "Distrito Nacional",
+        "estado": "Activo",
+        "id": 5
+      },
+      {
+        "suspensivos": "...",
+        "personaNo": "6",
+        "tipoDomicilio": "Verano",
+        "calle": "Ave. Winton Churchill",
+        "numero": "S/N",
+        "sector": "Naco",
+        "provincia": "La Romana",
+        "estado": "Activo",
+        "id": 6
+      }
+    ]
+  }
